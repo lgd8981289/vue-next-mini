@@ -16,14 +16,14 @@
 
 ## 核心模块
 
-├── compiler-core 
-├── compiler-dom
-├── reactivity
-├── runtime-core
-├── runtime-dom
-├── shared
-├── vue
-└── vue-compat
+1. compiler-core 
+2. compiler-dom
+3. reactivity
+4. runtime-core
+5. runtime-dom
+6. shared
+7. vue
+8. vue-compat
 
 
 
