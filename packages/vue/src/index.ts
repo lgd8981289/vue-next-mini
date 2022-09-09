@@ -1,1 +1,1 @@
-export { reactive } from '@vue/reactivity'
+export { reactive, effect, ref } from '@vue/reactivity'

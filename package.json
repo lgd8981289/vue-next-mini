@@ -1,29 +1,29 @@
 {
-  "name": "vue-next-mini",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "rollup -c",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lgd8981289/vue-next-mini.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lgd8981289/vue-next-mini/issues"
-  },
-  "homepage": "https://github.com/lgd8981289/vue-next-mini#readme",
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^22.0.1",
-    "@rollup/plugin-node-resolve": "^13.3.0",
-    "@rollup/plugin-typescript": "^8.3.4",
-    "rollup-plugin-sourcemaps": "^0.6.3",
-    "tslib": "^2.4.0",
-    "typescript": "^4.7.4"
-  }
+	"name": "vue-next-mini",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "rollup -c",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lgd8981289/vue-next-mini.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/lgd8981289/vue-next-mini/issues"
+	},
+	"homepage": "https://github.com/lgd8981289/vue-next-mini#readme",
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^22.0.1",
+		"@rollup/plugin-node-resolve": "^13.3.0",
+		"@rollup/plugin-typescript": "^8.3.4",
+		"rollup-plugin-sourcemaps": "^0.6.3",
+		"tslib": "^2.4.0",
+		"typescript": "^4.7.4"
+	}
 }

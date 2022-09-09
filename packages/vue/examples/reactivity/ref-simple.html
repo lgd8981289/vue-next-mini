@@ -14,19 +14,17 @@
 </body>
 
 <script>
-  const { reactive, effect } = Vue
+  const { ref, effect } = Vue
 
-  const obj = reactive({
-    name: '张三'
-  })
+  const obj = ref('张三')
 
   // 调用 effect 方法
   effect(() => {
-    document.querySelector('#app').innerText = obj.name
+    document.querySelector('#app').innerText = obj.value
   })
 
   setTimeout(() => {
-    obj.name = '李四'
+    obj.value = '李四'
   }, 2000);
 </script>
 
