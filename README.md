@@ -61,4 +61,4 @@
    npm run build
    ```
 
-测试实例查看 `packages/vue/examples`
+测试实例查看 [packages/vue/examples](https://github.com/lgd8981289/vue-next-mini/tree/master/packages/vue/examples)
