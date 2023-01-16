@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  const { compile, h, render } = Vue
+  // 创建 template
+  const template = `<div> <h1>hello world</h1> </div>`
+
+  // 生成 render 函数
+  const renderFn = compile(template)
+  console.log(renderFn.toString());
+  // 创建组件
+  const component = {
+    render: renderFn
+  }
+
+  // 通过 h 函数，生成 vnode
+  const vnode = h(component)
+
+  // 通过 render 函数渲染组件
+  render(vnode, document.querySelector('#app'))
+</script>
+
+</html>

@@ -1,7 +1,6 @@
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from '@rollup/plugin-commonjs'
 import typescript from '@rollup/plugin-typescript'
-import sourcemaps from 'rollup-plugin-sourcemaps'
 
 /**
  * 默认导出一个数组，数组的每一个对象都是一个单独的导出文件配置，详细可查：https://www.rollupjs.com/guide/big-list-of-options
@@ -27,13 +26,11 @@ export default [
 		// 插件
 		plugins: [
 			// ts 支持
-			typescript(),
+			typescript({ sourceMap: true }),
 			// 模块导入的路径补全
 			resolve(),
 			// 将 CommonJS 模块转换为 ES2015
-			commonjs(),
-			// source map 支持
-			sourcemaps()
+			commonjs()
 		]
 	}
 ]

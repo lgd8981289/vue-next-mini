@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  const { h, render } = Vue
+
+  const component = {
+    data() {
+      return {
+        msg: 'hello component'
+      }
+    },
+    render() {
+      return h('div', this.msg)
+    },
+    // 组件初始化完成之后
+    beforeCreate() {
+      alert('beforeCreate')
+    },
+    // 组件实例处理完所有与状态相关的选项之后
+    created() {
+      alert('created')
+    },
+    // 组件被挂载之前
+    beforeMount() {
+      alert('beforeMount')
+    },
+    // 组件被挂载之后
+    mounted() {
+      alert('mounted')
+    },
+  }
+
+  const vnode = h(component)
+  // 挂载
+  render(vnode, document.querySelector('#app'))
+</script>
+
+</html>

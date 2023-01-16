@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="../../dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+<script>
+  const { reactive, effect } = Vue
+
+  const obj = reactive({
+    count: 1
+  })
+
+  // 调用 effect 方法
+  effect(() => {
+    console.log(obj.count);
+  }, {
+    scheduler() {
+      setTimeout(() => {
+        console.log(obj.count);
+      })
+    }
+  })
+
+  obj.count = 2
+
+  console.log('代码结束');
+
+</script>
+
+</html>
