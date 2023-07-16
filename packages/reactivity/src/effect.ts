@@ -96,6 +96,7 @@ export function triggerEffects(dep: Dep) {
  * 触发指定的依赖
  */
 export function triggerEffect(effect: ReactiveEffect) {
+  debugger
   if (effect.scheduler) {
     effect.scheduler()
   } else {

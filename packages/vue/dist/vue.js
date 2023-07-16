@@ -222,6 +222,7 @@ var Vue = (function (exports) {
      * 触发指定的依赖
      */
     function triggerEffect(effect) {
+        debugger;
         if (effect.scheduler) {
             effect.scheduler();
         }
